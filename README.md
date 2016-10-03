@@ -1,1 +1,1 @@
-# CSC412-personal-website
+# CSC412 website project
