@@ -1,18 +1,23 @@
 <!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
 <html lang="en">
     <head>
-        <title>About</title>
+        <title>Projects</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="site.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/1dee631bec.css">
         <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-    <style>
+        <style>
         body {
             font-family: "Lato", sans-serif;
-            background-color:#f2f2f2;
             width:120%;
         }
 
@@ -37,11 +42,10 @@
             display: block;
             transition: 0.3s
         }
-        
+
         .sidenav a:hover:not(.active), .offcanvas a:focus{
             background-color: #0d0d0d;
         }
-        
         
         .sidenav a.active {
             background-color: #0d0d0d;
@@ -80,7 +84,7 @@
         span:hover {
             background-color: #0d0d0d;
         }
-        
+                
         h1 {
             padding:0;
             margin: 0;
@@ -97,29 +101,43 @@
             padding: 0;
             left: 70px;
         }
-                
-        div.PersonalIcon:hover, div.EducationIcon:hover, div.SkillIcon:hover {
+        
+        .twitter-timeline {
+            margin-left: 55px;
+            margin-right: 0px;
+        }
+        
+        .twitter-timeline:hover {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
-
-        div.EducationIcon, div.SkillIcon, div.PersonalIcon {
-          width: 400px;
-          height: 550px;
-          background-color: white;
-          margin-bottom: 25px;
-          margin-left: 55px;
+                
+        .fb-page {
+            left: 10px;        
         }
         
-        
+        .fb-page:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
     </style>
     </head>
     
     <body>
+        <!-- Facebook page js -->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+        
+        <!-- side navigation -->
         <div id="mySidenav" class="sidenav">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <a class="active" href="index.html"><i class="fa fa-user fa-fw w3-margin-right" aria-hidden="true" style="color:#f1f1f1;font-size:25px;margin-right:10px;"></i>About</a>
+          <a href="index.html"><i class="fa fa-user fa-fw w3-margin-right" aria-hidden="true" style="color:#f1f1f1;font-size:25px;margin-right:10px;"></i>About</a>
           <a href="works.html"><i class="fa fa fa-briefcase fa-fw w3-margin-right" aria-hidden="true" style="color:#f1f1f1;font-size:25px;margin-right:10px;"></i>Projects</a>
-          <a href="news.html"><i class="fa fa-newspaper-o fa-fw w3-margin-right" aria-hidden="true" style="color:#f1f1f1;font-size:25px;margin-right:10px;"></i>News</a>
+          <a class="active" href="news.html"><i class="fa fa-newspaper-o fa-fw w3-margin-right" aria-hidden="true" style="color:#f1f1f1;font-size:25px;margin-right:10px;"></i>News</a>
           <a href="contact.html"><i class="fa fa-envelope fa-fw w3-margin-right" aria-hidden="true" style="color:#f1f1f1;font-size:25px;margin-right:10px;"></i>Contact</a>
         </div>
 
@@ -135,43 +153,11 @@
 
         <!-- All page content inside this div -->
         <div id="main">
-          <h1>ABOUT ME</h1>
+          <h1>NEWS</h1>
           <hr id="hr1" align="left" width="95%">
           
-          <!-- list the cards -->
-          <div class="w3-third PersonalIcon">
-              <img src="Images/onepiece.jpg" alt="one piece icon" style="width:400px;;height:400px;">
-                <h2 style="margin-left:85px;padding: 10px 20px;">Zhewei Zhang</h2>
-                <a href="InternshipWorkshop.docx" style="font-size: x-large;color:#262626;margin-left:135px;"><i class="fa fa-download" aria-hidden="true"></i>Resume</a>
-          </div>
-          <div class="w3-third EducationIcon">
-                <h2 style="margin-left:25px;padding: 10px 20px;">Education</h2>
-                <hr id="hr2" align="center" width="90%" style="margin-left:20px;">
-                <div style="font-size: large;margin-left: 45px;">
-                    <p>San Francisco State University - SF GPA 3.93</p>
-                    <p>B.S Computer Science</p>
-                    <p>3 semester's Dean's list</p>
-                    <p>September 2014 - 2018</p>
-                    <p>Introduction to Programming, Data Structure, Discrete Mathematics, Machine Structure, Programming Methodology, Linear Algebra</p>
-                </div>
-          </div>
-          <div class="w3-third SkillIcon">
-                <h2 style="margin-left:25px;padding: 10px 20px;">Skills</h2>
-                <hr id="hr2" align="center" width="90%" style="margin-left:20px;">
-                <div style="font-size: large;margin-left: 45px;">
-                    <p>Html - Intermediate</p>
-                    <p>CSS - Intermediate</p>
-                    <p>JavaScript- Beginner</p>
-                    <p>Bootstrap - Beginner</p>
-                    <p>Java - Intermediate</p>
-                    <p>C++ - Intermediate</p>
-                    <p>ios Development - Beginner</p>
-                    <p>Python- Beginner</p>
-                    <p>UI Design(Sketch) - Intermediate</p>
-                </div>
-          </div>
-          
-          
+          <a class="twitter-timeline" data-width="800" data-height="590" href="https://twitter.com/Jerry_ZZW">Tweets by Jerry_ZZW</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <div class="fb-page" data-href="https://www.facebook.com/Zheweis-page-245963792487535" data-tabs="timeline" data-width="600" data-height="538" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/Zheweis-page-245963792487535" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Zheweis-page-245963792487535">Zhewei&#039;s page</a></blockquote></div>
         </div>
         
         <script>
@@ -186,5 +172,5 @@
             }
         </script>
     </body>
-    
 </html>
+

@@ -1,15 +1,21 @@
 <!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
 <html lang="en">
     <head>
-        <title>About</title>
+        <title>Projects</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="site.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/1dee631bec.css">
         <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-    <style>
+        <style>
         body {
             font-family: "Lato", sans-serif;
             background-color:#f2f2f2;
@@ -37,11 +43,10 @@
             display: block;
             transition: 0.3s
         }
-        
+
         .sidenav a:hover:not(.active), .offcanvas a:focus{
             background-color: #0d0d0d;
         }
-        
         
         .sidenav a.active {
             background-color: #0d0d0d;
@@ -97,28 +102,33 @@
             padding: 0;
             left: 70px;
         }
-                
-        div.PersonalIcon:hover, div.EducationIcon:hover, div.SkillIcon:hover {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        }
-
-        div.EducationIcon, div.SkillIcon, div.PersonalIcon {
-          width: 400px;
-          height: 550px;
-          background-color: white;
+                        
+        div.webScreenIcon, div.SuperMartIcon {
+          width: 422px;
+          background-color: #ffffff;
           margin-bottom: 25px;
           margin-left: 55px;
+          
         }
         
+        div.pokerGameIcon, div.FractionCalIcon, div.CarRentingIcon, div.GithubPage {
+            width: 422px;
+            background-color: #ffffff;
+            margin-bottom: 25px;
+            margin-left:20px;
+        }
         
+        div.FractionCalIcon:hover, div.webScreenIcon:hover, div.pokerGameIcon:hover, div.SuperMartIcon:hover, div.CarRentingIcon:hover, div.GithubPage:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
     </style>
     </head>
     
     <body>
         <div id="mySidenav" class="sidenav">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <a class="active" href="index.html"><i class="fa fa-user fa-fw w3-margin-right" aria-hidden="true" style="color:#f1f1f1;font-size:25px;margin-right:10px;"></i>About</a>
-          <a href="works.html"><i class="fa fa fa-briefcase fa-fw w3-margin-right" aria-hidden="true" style="color:#f1f1f1;font-size:25px;margin-right:10px;"></i>Projects</a>
+          <a href="index.html"><i class="fa fa-user fa-fw w3-margin-right" aria-hidden="true" style="color:#f1f1f1;font-size:25px;margin-right:10px;"></i>About</a>
+          <a class="active" href="works.html"><i class="fa fa fa-briefcase fa-fw w3-margin-right" aria-hidden="true" style="color:#f1f1f1;font-size:25px;margin-right:10px;"></i>Projects</a>
           <a href="news.html"><i class="fa fa-newspaper-o fa-fw w3-margin-right" aria-hidden="true" style="color:#f1f1f1;font-size:25px;margin-right:10px;"></i>News</a>
           <a href="contact.html"><i class="fa fa-envelope fa-fw w3-margin-right" aria-hidden="true" style="color:#f1f1f1;font-size:25px;margin-right:10px;"></i>Contact</a>
         </div>
@@ -135,43 +145,52 @@
 
         <!-- All page content inside this div -->
         <div id="main">
-          <h1>ABOUT ME</h1>
+          <h1>PROJECTS</h1>
           <hr id="hr1" align="left" width="95%">
-          
-          <!-- list the cards -->
-          <div class="w3-third PersonalIcon">
-              <img src="Images/onepiece.jpg" alt="one piece icon" style="width:400px;;height:400px;">
-                <h2 style="margin-left:85px;padding: 10px 20px;">Zhewei Zhang</h2>
-                <a href="InternshipWorkshop.docx" style="font-size: x-large;color:#262626;margin-left:135px;"><i class="fa fa-download" aria-hidden="true"></i>Resume</a>
-          </div>
-          <div class="w3-third EducationIcon">
-                <h2 style="margin-left:25px;padding: 10px 20px;">Education</h2>
-                <hr id="hr2" align="center" width="90%" style="margin-left:20px;">
-                <div style="font-size: large;margin-left: 45px;">
-                    <p>San Francisco State University - SF GPA 3.93</p>
-                    <p>B.S Computer Science</p>
-                    <p>3 semester's Dean's list</p>
-                    <p>September 2014 - 2018</p>
-                    <p>Introduction to Programming, Data Structure, Discrete Mathematics, Machine Structure, Programming Methodology, Linear Algebra</p>
-                </div>
-          </div>
-          <div class="w3-third SkillIcon">
-                <h2 style="margin-left:25px;padding: 10px 20px;">Skills</h2>
-                <hr id="hr2" align="center" width="90%" style="margin-left:20px;">
-                <div style="font-size: large;margin-left: 45px;">
-                    <p>Html - Intermediate</p>
-                    <p>CSS - Intermediate</p>
-                    <p>JavaScript- Beginner</p>
-                    <p>Bootstrap - Beginner</p>
-                    <p>Java - Intermediate</p>
-                    <p>C++ - Intermediate</p>
-                    <p>ios Development - Beginner</p>
-                    <p>Python- Beginner</p>
-                    <p>UI Design(Sketch) - Intermediate</p>
-                </div>
-          </div>
-          
-          
+            <!-- List the cards -->
+            <div class="w3-third webScreenIcon">
+              <img src="Images/webScreen.png" alt="web screen" style="width:422px;;height:250px;">
+              <div style="margin-left: 110px;padding: 10px 20px;">
+                <h2><a href="https://github.com/JerryZZW/CSC412-website-project" style="color:#262626;">My website</a></h2>
+                <p style="margin-left:-20px;font-style:italic;">Html/css js php and more</p>
+              </div>
+            </div>
+            <div class="w3-third pokerGameIcon">
+              <img src="Images/poker-game.jpg" alt="poker game" style="width:422px;;height:250px;">
+              <div style="margin-left: 60px;padding: 10px 20px;">
+                <h2><a href="https://github.com/JerryZZW/Java-Poker-Game" style="color:#262626;">Simple poker game</a></h2>
+                <p style="margin-left:100px;font-style:italic;">Java</p>
+              </div>
+            </div>
+            <div class="w3-third FractionCalIcon">
+              <img src="Images/FractionCal.jpg" alt="fraction calculator" style="width:422px;;height:250px;">
+              <div style="margin-left: 60px;padding: 10px 20px;">
+                <h2><a href="https://github.com/JerryZZW/SimpleFractionCalculator" style="color:#262626;">Fraction Calculator</a></h2>
+                <p style="margin-left:100px;font-style:italic;">Java</p>
+              </div>
+            </div>
+            <div class="w3-third SuperMartIcon">
+              <img src="Images/SuperMart.jpg" alt="superMart simulator" style="width:422px;;height:250px;">
+              <div style="margin-left: 60px;padding: 10px 20px;">
+                <h2><a href="https://github.com/JerryZZW/SuperMartSimulation" style="color:#262626;">SuperMart Simulator</a></h2>
+                <p style="margin-left:100px;font-style:italic;">Java</p>
+              </div>
+            </div>
+            <div class="w3-third CarRentingIcon">
+              <img src="Images/CarRenting.jpg" alt="car renting simulator" style="width:422px;;height:250px;">
+              <div style="margin-left: 50px;padding: 10px 20px;">
+                  <h2><a href="https://github.com/JerryZZW/CarRentingSimulator" style="color:#262626;">CarRenting Simulator</a></h2>
+                <p style="margin-left:120px;font-style:italic;">Java</p>
+              </div>
+            </div>
+            <div class="w3-third GithubPage">
+              <img src="Images/github-logo.jpg" alt="github page" style="width:422px;;height:250px;">
+              <div style="margin-left: 110px;padding: 10px 20px;">
+                  <h2><a href="https://github.com/JerryZZW" style="color:#262626;">Github page</a></h2>
+                <p style="margin-left:30px;font-style:italic;">Discover More!</p>
+              </div>
+            </div>
+            
         </div>
         
         <script>
@@ -186,5 +205,4 @@
             }
         </script>
     </body>
-    
 </html>
